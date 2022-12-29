@@ -2,6 +2,34 @@ import React, {Component} from 'react';
 import './Home.css';
 
 class Home extends Component {
+    state = {
+      count: 1,
+    }
+
+    increment = () => {
+      this.setState((state) => {
+        if(state.count < 20) {
+          return {count: state.count + 1}
+        } else {
+          return {count: state.count}
+        }
+      });
+    }
+
+    decrement = () => {
+      this.setState((state) => {
+        if(state.count > 1) {
+          return {count: state.count - 1}
+        } else {
+          return {count: state.count}
+        }
+      });
+    }
+
+    handleChange = (event) => {
+      this.setState({state: event.target.value});
+    }
+  
     render() {
         return (
             <div className="main-card">
