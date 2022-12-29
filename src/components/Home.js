@@ -1,71 +1,56 @@
 import React, {Component} from 'react';
-import Typewriter from "typewriter-effect";
-import GraphemeSplitter from "grapheme-splitter";
 import './Home.css';
-import Navbar from './Navbar';
 
 class Home extends Component {
     render() {
-        const stringSplitter = string => {
-            const splitter = new GraphemeSplitter();
-            return splitter.splitGraphemes(string);
-        };
         return (
-            <div>
-                <Navbar page="home"/>
-                <div className="homepage">
-                    <div className="introduction">
-                        Hi, I'm Marc.
-                    </div>
-                    <div className="emojiContainer">
-                        <div id="emoji"> 
-                            <Typewriter
-                                options={{
-                                    cursorClassName: "noCursor",
-                                    loop: true,
-                                    delay: 0, 
-                                    deleteSpeed: 0,
-                                    stringSplitter}}
-                                onInit={(typewriter) => {
-                                    typewriter.typeString("💻")
-                                    .pauseFor(4800)
-                                    .deleteAll()
-                                    .typeString("₿")
-                                    .pauseFor(5600)
-                                    .deleteAll()
-                                    .typeString("🏋️")
-                                    .pauseFor(5000)
-                                    .deleteAll()
-                                    .typeString("🖼")
-                                    .pauseFor(4250)
-                                    .deleteAll()
-                                    .typeString("🐍")
-                                    .pauseFor(3700)
-                                    .deleteAll()
-                                    .typeString("🧥")
-                                    .pauseFor(4500)
-                                    .deleteAll()
-                                    .start();
-                                }}
-                            />
-                        </div>
-                        <div className="shadow"></div>
-                    </div>
-                    <div className="description">
-                        I'm a
-                        <Typewriter
-                            options={{
-                                strings: ['eager developer.', 'blockchain enthusiast.', 'nighttime gym rat.', 'nft collector.', 'Lakers fan.', 'weekend stylist.'],
-                                delay: 75,
-                                deleteSpeed: 70,
-                                pauseFor: 1800,
-                                autoStart: true,
-                                loop: true,
-                            }}
-                        />
-                    </div>
+            <div className="main-card">
+                <div className="main-text">
+                    <p class="header">Hi, I'm Marc 👋</p>
+                    <p>I'm a 3rd year computer science major at UC Berkeley pursuing a career in cybersecurity and Web3 security auditing. </p>
+
+                    <p>Recently I cofounded DeFi at Berkeley and joined Berke1337, Berkeley's Cyber Defense Competition Team. Over the summer I interned at UnionDigital Bank as a software engineer.</p>
+                        
+                    <p>Outside of security, I'm passionate about learning how to trade crypto and I like to read, work out, play basketball, eat kbbq, and listen to edm. Ocassionally my friends and I make NFTs.</p>
+
+                    <p>I work extremely hard on the things I care about and am confident in my ability to learn new technology quickly.</p>
+
+                    <p>Check out my <a class="link">resume</a>.</p>
                 </div>
-            </div>
+                <div class="section">
+                    <p class="header">Socials</p>
+                    <div class="link-container">
+                        <a class="button"> twitter </a>
+                        <a class="button"> medium </a>
+                        <a class="button"> github </a>
+                        <a class="button"> linkedin </a>
+                        <a class="button"> email </a>
+                    </div>
+                </div> 
+                <div class="section">
+                    <p class="header">Articles</p>
+                    <div class="article">
+                        <div class="date"> January 25, 2022 </div>
+                        <div class="title"> January Recap </div>
+                    </div>
+                    <div class="article">
+                        <div class="date"> January 20, 2022</div>
+                        <div class="title"> Paradigm 2021 Solutions </div>
+                    </div>
+                    <div class="article">
+                        <div class="date"> January 10, 2022</div>
+                        <div class="title"> Damn Vulnerable Defi Solutions </div>
+                    </div>
+                    <div class="article">
+                        <div class="date"> January 7, 2022</div>
+                        <div class="title"> Ethernaut Solutions </div>
+                    </div>
+                    <div class="article">
+                        <div class="date"> January 3, 2022</div>
+                        <div class="title"> Capture the Ether Solutions </div>
+                    </div>
+                </div> 
+            </div>  
         );
     }
 }
