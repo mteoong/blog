@@ -11,11 +11,11 @@ class Home extends Component {
                 </div>
                 <div class="section">
                     <div class="link-container">
-                        <a class="button" id="twitter" href = "https://twitter.com/mjto_BingX">  </a>
-                        <a class="button" id="discord" href="https://discordapp.com/users/413988026469974019">  </a>
-                        <a class="button" id="linkedin" href = "https://www.linkedin.com/in/mteoong/">  </a>
-                        <a class="button" id="email" href = "mailto: mjto@bingx.com">  </a>
-                        <a class="button" id="bingx" href = "https://bingx.com/">  </a>
+                        <a class="button" id="twitter" href = "https://twitter.com/mjto_BingX" target="_blank">  </a>
+                        <a class="button" id="discord" href="https://discordapp.com/users/413988026469974019" target="_blank">  </a>
+                        <a class="button" id="linkedin" href = "https://www.linkedin.com/in/mteoong/" target="_blank">  </a>
+                        <a class="button" id="email" href = "mailto: mjto@bingx.com" target="_blank">  </a>
+                        <a class="button" id="bingx" href = "https://bingx.com/" target="_blank">  </a>
                     </div>
                 </div> 
             </div>  
