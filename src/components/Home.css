@@ -4,32 +4,61 @@
     padding-top: 20px;
 }
 
+.body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5rem;
+}
+
 .main-text {
     color: black;
-    font-size: 1.1em;
+    font-size: 1.3em;
     line-height: 1.6em;
     width: 100%;
     padding-top: 50px;
     font-family: 'Open Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 
 .header { 
     font-size: 1.6em;
     font-weight: 500;
-    font-family: 'Open Sans', sans-serif;
     margin: 0;
+    font-family: 'Times New Roman';
+}
+
+.subheader {
+    font-family: 'Times New Roman';
+    margin: 0.5rem;
 }
 
 .section {
-    padding-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0rem;
     padding-bottom: 1.8rem;
-    border-top: 1px solid #dce6f0;
 }
 
 .link-container {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     padding-top: 1rem;
 }
 
@@ -41,35 +70,55 @@ a.link {
 
 a.button {
     display: block;
-    margin-right: .7em;
-    background-color: #dce6f0;
-    color: #19232d;
-    padding: .25rem .7rem;
-    font-family: 'Roboto Mono', monospace;
+    margin-right: .5rem;
+    margin-left: .5rem;
+    padding: .1rem .5rem;
     border-radius: .4rem;
     font-size: 1rem;
     cursor: pointer;
 }
 
-a.button:hover {
-    background-color: #aebdcc;
-}
-
-.article {
-    padding-top: 1rem;
-    padding-bottom: 0.5rem;
-}
-
-.date {
-    font-family: 'Roboto Mono', monospace;
-    color: #828c96;
-}
-
-.title {
-    font-size: 1.4em;
-    font-weight: 400;
-    font-family: 'Open Sans', sans-serif;
-    margin: 0;
-    text-decoration: underline;
+a:hover {
     cursor: pointer;
+}
+
+#twitter {
+    background-image: url('../logos/twitter.png');
+    width: 32px;
+    height: 32px;
+    background-size: 32px;
+    background-repeat: no-repeat; 
+}
+
+#discord {
+    background-image: url('../logos/discord.png');
+    width: 35px;
+    height: 35px;
+    background-size: 35px;
+    background-repeat: no-repeat; 
+}
+
+#email {
+    background-image: url('../logos/email.png');
+    width: 32px;
+    height: 32px;
+    background-size: 32px;
+    background-repeat: no-repeat; 
+}
+
+#linkedin {
+    background-image: url('../logos/linkedin.png');
+    width: 32px;
+    height: 32px;
+    background-size: 32px;
+    background-repeat: no-repeat; 
+}
+
+#bingx {
+    background-image: url('../logos/bingxx.png');
+    width: 32px;
+    height: 32px;
+    background-size: 32px;
+    background-repeat: no-repeat; 
+    margin-top: 3px;
 }
